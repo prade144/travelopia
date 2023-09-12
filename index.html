@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Travelopia" />
+    <meta name="keywords" content="Travel Brands" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelopia</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>Header</header>
+      <section class="container">
+        <picture>
+          <source
+            media="(min-width:1600px)"
+            srcset="./images/hero-banner-1600.jpg"
+          />
+          <source
+            media="(min-width:1440px)"
+            srcset="./images/hero-banner-1440.jpg"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="./images/hero-banner-1280.jpg"
+          />
+          <source
+            media="(min-width:1024px)"
+            srcset="./images/hero-banner-1024.jpg"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./images/hero-banner-768.jpg"
+          />
+          <source
+            media="(min-width:375px)"
+            srcset="./images/hero-banner-375.jpg"
+          />
+          <img
+            class="banner"
+            src="./images/hero-banner-1600.jpg"
+            alt="Hero Banner"
+          />
+        </picture>
+        <div class="overlay"></div>
+        <div class="banner_content">
+          <h1>Travel</h1>
+          <button onclick="showAlert()">Click Here</button>
+        </div>
+      </section>
+      <footer>Footer</footer>
+    </main>
+    <script>
+      function showAlert() {
+        alert("Hello World");
+      }
+    </script>
+  </body>
+</html>
